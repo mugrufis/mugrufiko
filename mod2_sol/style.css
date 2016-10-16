@@ -1,0 +1,94 @@
+*{
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+h1{
+	text-align: center;
+	font-size: 1.75em;
+}
+
+
+div > div{
+	width: 40%;
+	height:27px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	text-align: center;
+	padding-top: 3px;
+	position: absolute;
+	right:0;
+
+}
+
+.sectionhead1{
+	background-color: #ff5431;
+	font-size: 1.25em;
+}
+
+.sectionhead2{
+	background-color: #cf0401;
+	font-size: 1.25em;
+}
+
+.sectionhead3{
+	background-color: #0f5431;
+	color:white;
+	font-size: 1.25em;
+}
+
+p {
+	padding-top: 27px;
+	overflow: auto;
+}
+
+
+
+/* D--E---S---K---T---O---P */
+@media (min-width: 992px){
+	.desk{
+		position: relative;
+		min-height: 100px;
+		width:31%;
+		border: 1px solid black;
+		float:left;
+		margin: 10px;
+		background-color: #ffe6ff;
+
+	}
+}
+
+
+
+/* T----A------B-----L------E-----T   */
+
+@media (min-width: 768px) and (max-width: 991px){
+	.tab{
+		position: relative;
+		min-height: 100px;
+		width:47%;
+		border: 1px solid black;
+		float:left;
+		margin: 10px;
+		background-color: #ffe6ff;
+		
+	}
+	
+	#b3{
+		width: 96.5%;
+	}
+}
+
+/* M----O-----B----I-----L-----E */
+
+@media (max-width: 767px){
+	.desk{
+		position: relative;
+		min-height: 100px;
+		width:96.5%;
+		border: 1px solid black;
+		float:left;
+		margin: 10px;
+		background-color: #ffe6ff;
+		
+}
