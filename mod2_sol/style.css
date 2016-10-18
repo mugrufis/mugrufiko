@@ -38,7 +38,7 @@ div > div{
 }
 
 p {
-	padding-top: 27px;
+	padding: 27px 10px 0 10px;
 	overflow: auto;
 }
 
