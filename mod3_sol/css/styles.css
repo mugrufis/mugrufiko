@@ -1,0 +1,19 @@
+nav div div ul li {
+	background-color: #9fff80;
+}
+
+.row {
+	height: 1000px;
+	border:1px solid black;
+	background-color: #ecffe6;
+	width: 100%;
+	}
+
+
+
+.container{
+
+	width: 94%;
+	margin-left: auto;
+	margin-right: auto;
+}
