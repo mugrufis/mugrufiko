@@ -1,19 +1,69 @@
+@media (min-width: 768px){
+#ipsos {
+	height: 86px
+}
+}
+
+
+
+#navhead {
+	position: relative;
+}
+
+@media (max-width: 300px){
+	h1 {font-size: 20px;
+		padding-bottom: 0px;
+	  }
+	#ipsos {height: 70px;}
+}
+
+button {
+	position: absolute;
+	margin-top: 25px !important;
+	margin-bottom: 25px !important;
+}
+
+
+
+nav div div ul {
+	border: 1px solid black;
+
+
+}
+
 nav div div ul li {
 	background-color: #9fff80;
+	margin:0 20px;
+	margin: 0px;
+	border:1px solid black;
+}
+
+
+nav div div ul li a{
+	font-size: 18px;
 }
 
 .row {
-	height: 1000px;
-	border:1px solid black;
-	background-color: #ecffe6;
-	width: 100%;
-	}
-
-
-
-.container{
-
-	width: 94%;
-	margin-left: auto;
 	margin-right: auto;
+    margin-left: auto;
+	
 }
+	
+#ch, #bf, #su {
+	background-color: #e5fce7;
+	border: 1px solid black;
+	margin-top: 25px;
+}
+
+div div div div div a {
+	opacity: .8;
+}
+
+
+
+
+
+
+
+
+
