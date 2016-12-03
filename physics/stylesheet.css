@@ -1,0 +1,58 @@
+/*p{
+	text-align: center;
+}
+
+.wraper{
+	position: relative;
+}
+
+.paper, .wood {
+	height: 740px;
+	float: :left;
+	width: 50%;
+	position: absolute;
+	
+}
+
+.wood{
+	margin-left: 500px
+}
+
+hr {
+
+	border:1px solid black;
+}
+
+.grammes {
+	position: absolute;
+	margin-top: 765px;
+	width:100%;
+}
+
+.paperImg, .woodImg {
+	opacity: 0.8
+}*/
+
+.paravan{
+	height: 850px;
+}
+.diaxoristiko{
+	margin-left: 20px;
+	height: 850px;
+	width: 1px;
+	background-color: black;
+}
+
+
+hr {
+	border:1px solid black;
+	margin: 0px
+}
+
+.reset{
+	margin-left: 50%;
+}
+
+.grammes span {
+	margin-left: 44%
+}
