@@ -1,0 +1,13 @@
+{"Greek":{
+	"name":"Ta dyo aderfia",
+	"type": "Greek food",
+	"quality":"Bellow average",
+	"prices": "Good"
+	},
+ "Indian":{
+	"name":"Ta tria aderfia",
+	"type": "Shit food",
+	"quality":"Bellow average",
+	"prices": "Good"
+	}
+}
