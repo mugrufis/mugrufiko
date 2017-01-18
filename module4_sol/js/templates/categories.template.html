@@ -1,0 +1,9 @@
+<h2>Categories</h2>
+Back to <a ui-sref="home">Home</a>
+<ul>
+	<li ng-repeat="item in categoriesCtrl.categories"
+	 ui-sref="items({shortName: item.short_name})">{{item.name}}
+	</li>
+
+<a ui-sref="items">Click me</a>
+</ul>

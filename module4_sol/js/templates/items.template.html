@@ -1,0 +1,10 @@
+<h2>Items</h2>
+Back to <a ui-sref="categories">Categories</a>
+
+<ul>
+	<li ng-repeat="item in itemsCtrl.menuItems" >
+		<h4>{{item.name}}</h4>
+		<p> {{item.description}} </p>
+	</li>
+
+</ul>
