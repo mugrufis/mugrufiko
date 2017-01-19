@@ -1,9 +1,13 @@
-<h2>Categories</h2>
-Back to <a ui-sref="home">Home</a>
-<ul>
-	<li ng-repeat="item in categoriesCtrl.categories"
-	 ui-sref="items({shortName: item.short_name})">{{item.name}}
-	</li>
+<h2 class="categoriesTitle col-xs-12">Categories</h2>
 
-<a ui-sref="items">Click me</a>
-</ul>
+
+	<div 
+	 ng-repeat="item in categoriesCtrl.categories"
+	 ui-sref="items({shortName: item.short_name})"
+	 class="categoriesLi col-xs-6" >
+	 		{{item.name}}
+	</div>
+	<div class="col-xs-12 homeBtn">
+		Back to <a ui-sref="home">Home</a>
+	</div>
+	<hr class="style18 col-xs-9">
