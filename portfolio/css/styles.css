@@ -1,0 +1,94 @@
+body{
+	background-color: black;
+}
+.indenter{
+	height: 350px;
+}
+
+.navigation{
+	margin-top: 90px;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-size: 0.8em;
+	opacity: 0.6;
+	font-size: 1.2em;
+}
+
+.navigation a:hover{
+	font-size: 1.4em;
+	opacity: 0.8;
+}
+
+.title{
+	margin-top: 10%;
+	color: white;
+}
+
+.heading{
+	font-size: 4em;
+}
+
+
+.firstImg{
+	margin-top:-5% ;
+	position: fixed;
+	width: 45%;
+	z-index: -5;
+}
+
+.secondBlock {
+
+	height: 750px;
+	background-color: white;
+	opacity: 0.9;
+	margin-top: 30%;
+}
+
+.activated{
+	font-size: 1em;
+	opacity: 0.8;
+}
+
+.myText {
+	margin-top: 170px;
+	opacity: 0.9;
+	font-size: 2em;
+}
+
+
+.aWord{
+	padding-top: 140px;
+	font-size: 2.5em;
+}
+
+
+.thirdBlock {
+	background-color: rgba(99, 99, 99, 0.54);
+	
+	height: auto;
+}
+
+.projects {
+	font-size: 2.5em;
+	color: white;
+	margin-top: 70px;
+	opacity: 0.8;
+	margin-bottom:80px;
+}
+
+
+
+section div img {
+	margin-bottom: 120px;
+	
+	
+}
+
+.fourthBlock{
+	height: 500px;
+	background-color: white;
+}
