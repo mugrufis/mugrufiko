@@ -1,0 +1,25 @@
+<div class="container" >
+	<div class="col-xs-12 text-center" ng-if="!infoCtrl.user.registered" style="height: 200px;">  
+	       <span  ><br><br><br> Not Signed Up Yet.<br>
+		<a ui-sref="public.sign-up"> Sign up Now!</a></span> 
+	</div>
+
+	<div ng-if="infoCtrl.user.registered"  >
+		<div class="col-xs-5">
+			First Name: {{infoCtrl.user.firstName}}<br>
+			Last Name: {{infoCtrl.user.lastName}}<br>
+			Email address: {{infoCtrl.user.email}}<br>
+			Phone: {{infoCtrl.user.phone}}<br>
+			Favorite Dish Number: {{infoCtrl.user.favDishNum}} <br>
+		</div>
+		<div class="col-xs-3">
+			<img style="border: 1px solid black" src="{{infoCtrl.ApiPath}}/images/{{infoCtrl.user.favDishNum}}.jpg" alt="{{infoCtrl.user.favDish.name}}">
+		</div>
+		<div class=" col-xs-4">
+			<h3>{{infoCtrl.user.favDish.name}}</h3>
+			<br>
+			{{infoCtrl.user.favDish.description}}
+		</div>
+	</div>
+	
+</div>

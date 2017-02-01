@@ -1,0 +1,84 @@
+<div class="container">
+	<form name="signUpForm" novalidate >
+		<table>
+			<tr>
+				<td>First Name: </td>
+				<td> 
+					<input type="text" name="firstName" placeholder="First Name"
+			   				ng-model="$ctrl.user.firstName" required minlength="3">
+				</td>
+				<td>
+					<span
+            			ng-if="(signUpForm.firstName.$error.minlength || signUpForm.firstName.$error.required) && signUpForm.firstName.$touched">
+            			This field requires at least 3 characters.
+         			</span>
+	
+				</td>
+			</tr>
+			<tr>
+				<td>Last Name:  </td>
+				<td>
+					<input type="text" name="lastName" placeholder="Last Name"
+			   				ng-model="$ctrl.user.lastName" required minlength="3">
+				</td>
+				<td>
+					<span
+            			ng-if="(signUpForm.lastName.$error.minlength || signUpForm.lastName.$error.required) && signUpForm.lastName.$touched">
+     		       		This field requires at least 3 characters.
+         			</span>
+         		</td>
+			</tr>
+			<tr>
+				<td>Email Address:</td>
+				<td>
+					<input type="email" name="email" placeholder="Email"
+          					ng-model="$ctrl.user.email" required >
+          		</td>
+          		<td>
+          			<span ng-if="signUpForm.email.$invalid && signUpForm.email.$touched">
+            			Must be a valid email address.
+          			</span>
+			    </td>
+			</tr>
+			<tr>
+				<td>Phone Number:</td>
+				<td>
+					<input type="text" name="phone" placeholder="Phone ####-####-####"
+          					ng-model="$ctrl.user.phone"
+          					pattern="(\d{4})-(\d{4})-(\d{4})">
+          		</td>
+          		<td>
+          			<span ng-if="signUpForm.phone.$invalid && signUpForm.phone.$touched">
+            			Phone must be in the format ####-####-####.(Dashes included!)
+          			</span>
+          		</td>
+          	</tr>
+			<tr>
+				<td>Favorite Dish Number:</td>
+				<td>   
+					<input type="text" name="favDishNum" 
+						   placeholder="Favourite Dish"
+			   			   ng-model="$ctrl.user.favDishNum" required>
+				</td>
+				<td>
+					<span
+           			 ng-if="!$ctrl.control.responeArrived && signUpForm.favDishNum.$touched">
+           			 No such menu number exists
+         			</span>
+         		</td>
+         	</tr>
+			<tr>
+				<td>
+					<button ng-disabled="signUpForm.$invalid" ng-click="$ctrl.submit($ctrl.user.favDishNum)">		Submit 
+					</button>
+				</td>
+
+			<div class="text-center" ng-if="$ctrl.control.infoSave">
+					<span  ><h3><i> Your information has been saved! </i></h3></span>
+				</div>
+			</tr>
+			
+			
+		</table>
+	</form>
+</div>

@@ -1,0 +1,25 @@
+form input {
+	
+}
+
+input {
+	color: black;
+}
+
+form button {
+	color: black;
+}
+
+table {
+	margin-left: 13%;
+}
+
+table td {
+	padding-left: 10px;
+	padding-top: 10px;
+
+}
+
+td button {
+	margin-left: 70%;
+}
