@@ -1,27 +1,87 @@
 $(document).ready(function(){
+
+	var titleFadeIn = TweenMax.from('.title',1,{
+		opacity:0,
+		scale:0, 
+		ease:Circ.easeOut,
+		x:-200
+	})
+	
+
 	var controller = new ScrollMagic.Controller();
+
+
+		var navLetters = new ScrollMagic.Scene({
+		triggerElement:'#block2',
+		duration:'100%',
+		triggerHook: 0.45
+	})
+	.setClassToggle('.navigation a', 'blackLetters')
+	.addTo(controller);
+
+		var navLetters2 = new ScrollMagic.Scene({
+		triggerElement:'#block4',
+		duration:'100%',
+		triggerHook: 0.45
+	})
+	.setClassToggle('.navigation a', 'blackLetters')
+	.addTo(controller);
+
+
+
+	var navScene1 = new ScrollMagic.Scene({
+		triggerElement:'#block1',
+		duration:'100%',
+		triggerHook: 0.4
+	})
+	.setClassToggle('#home', 'activeNav')
+	.addTo(controller);
+
+	var navScene2 = new ScrollMagic.Scene({
+		triggerElement:'#block2',
+		duration:'100%',
+		triggerHook: 0.45
+	})
+	.setClassToggle('#about', 'activeNav')
+	.addTo(controller);
+
+	var navScene3 = new ScrollMagic.Scene({
+		triggerElement:'#block3',
+		duration:'100%',
+		triggerHook: 0.45
+	})
+	.setClassToggle('#projects', 'activeNav')
+	.addTo(controller);
+
+		var navScene4 = new ScrollMagic.Scene({
+		triggerElement:'#block4',
+		duration:'100%',
+		triggerHook: 0.45
+	})
+	.setClassToggle('#contact', 'activeNav')
+	.addTo(controller);
+
 
 	var myScene5 = new ScrollMagic.Scene({
 		triggerElement:'#block3',
-		triggerHook: 0.7
+		triggerHook: 0.7,
+		reverse: false
 	})
 	.setTween(TweenMax.staggerFrom('#block3 p', 1 , {
 		opacity:0,
-		scale:0,
+		scale:0
 	}, 0.5 ))
-	.addIndicators()
 	.addTo(controller);
 	
 	var myScene4 = new ScrollMagic.Scene({
 		triggerElement:'#block3',
-		triggerHook: 0.5
+		triggerHook: 0.5,
+		reverse: false
 	})
-	.setTween(TweenMax.staggerFrom('#block3 img', 1 , {
+	.setTween(TweenMax.staggerFrom('#block3 img', 1.5 , {
 		opacity:0,
-		scale:0,
-		rotation:180
+		scale:0
 	}, 0.5 ))
-	.addIndicators()
 	.addTo(controller);
 
 
@@ -46,7 +106,7 @@ $(document).ready(function(){
 	var myScene1 = new ScrollMagic.Scene({
         triggerElement: '#block4',
         triggerHook: 1,
-        reverse:false,
+        reverse:false
 
     })
 	.setClassToggle('#block4','fade-in')
