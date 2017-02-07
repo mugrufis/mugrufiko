@@ -59,7 +59,7 @@ $(document).ready(function(){
 		triggerHook: 0.45
 	})
 	.setClassToggle('#contact', 'activeNav')
-	.addTo(controller);
+	.addTo(controller);  
 
 
 	var myScene5 = new ScrollMagic.Scene({
