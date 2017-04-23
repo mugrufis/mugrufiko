@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<head>
+	<title>Linear Drums Idea Generator || By Theo Sioris</title>
+</head>
+<body>
+<div class="container-fluid" >
+	<div class="row" >
+		<div id="score" class="col-xs-12">
+			
+		</div>
+		<div id="controls" class="col-xs-12" >
+		<label for="grouping" >Grouping:</label>
+			<input type="text" name="grouping" id="grouping" placeholder="Nums 2-5 with a sum 16" >
+			<!-- <label for="timeSign" >Time Signature:</label>
+			<input type="text" name="timeSign"> -->
+			<button id="generate">Genarate</button>
+			<!-- <button id="cmd">PDF Download</button> -->
+		</div>
+	</div>
+</div>
+
+
+	<script type="text/javascript" src="jQuery.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+	<script type="text/javascript" src="vexFlow.js" ></script>
+	<script type="text/javascript" src="groupingStickings.js"></script>
+	<script type="text/javascript" src="script.js" ></script>
+	<script type="text/javascript" src="pdfDl.js"></script>
+</body>
+</html>

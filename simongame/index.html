@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Simon Game</title>
+</head>
+<body>
+
+
+	
+
+	<div class="theMachine">
+
+		<div id="1" class="quarter green" tabindex="-1"></div>
+		<div id="2" class="quarter red" tabindex="-1"></div>
+		<div id="4" class="quarter yellow" tabindex="-1"></div>
+		<div id="3" class="quarter blue" tabindex="-1"></div>
+		<div  class="theControls" >
+			<div class="screen"> </div>
+			<h3>SIMON</h3>
+			<div class="theBtns">
+				<!-- <span class="toggle">
+					<input type="checkbox ">
+					<label data-off="" data-on="Start"></label>
+				</span> -->
+				<span class="toggle start">
+					<input type="checkbox" class="startBtn">
+					<label data-off="" data-on="Start"></label>
+
+				</span>
+				<span class="toggle strict">
+					<input type="checkbox" class="strictMode" >
+					<label data-off="Normal" data-on="Strict"></label>
+
+				</span>
+				<span class="light"></span>
+			</div>
+		</div>
+
+	</div>
+	
+	<script
+			  src="https://code.jquery.com/jquery-3.2.0.min.js"
+			  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+			  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js" ></script>
+</body>
+</html>

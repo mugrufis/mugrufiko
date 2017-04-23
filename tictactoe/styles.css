@@ -1,0 +1,40 @@
+body{
+	background:linear-gradient(white, grey);
+	height: 100vh;
+}
+
+
+
+
+
+td{
+	height: 180px;
+	width: 180px;
+	border: 2px solid ;
+	border-color: black;
+	text-align: center;
+	font-size: 30px;
+	font-family: Cursive, sans-serif;
+}
+table{
+	border-style: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.output{
+	font-size: 30px;
+}
+
+td:hover{
+	background-color: lightgrey;
+}
+
+td:active{
+	background-color: grey;
+}
+
+.buttonsWrap{
+	margin-top: 20px;
+	margin-left: 20px;
+}

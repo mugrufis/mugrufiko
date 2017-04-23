@@ -1,0 +1,55 @@
+td img {
+	height: 50px;
+	border-radius: 15px;
+}
+td{
+	padding-left: 10px;
+}
+
+td, .error{
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.error{
+	margin-top:5px;
+	padding-left: 20px;
+}
+
+.loader{
+	display: none;
+}
+
+.red{
+	color: red;
+}
+
+.green{
+	color: green;
+}
+
+.placeholder{
+	height: 50px;
+	width: 53px;
+	border-radius: 15px;
+	display: inline-block;
+	background-color: grey;
+	margin-left: -10px;
+}
+
+.error p {
+	display: inline-block;
+	position: absolute;
+	 	padding-left: 10px;
+}
+
+.contentWrapper{
+	position: absolute;
+	margin-left: 40%;
+	margin-top: 5%;
+}
+
+.offlineLink{
+	text-decoration: none;
+
+}

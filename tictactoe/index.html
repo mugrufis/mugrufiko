@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="buttonsWrap col" >
+				<span>
+					Play as  
+					<button class="pickX">X</button> or 
+					<button class="pickO" >O</button> 
+					<br>
+					Default choice is X.
+					<br> 
+					<em>Note:</em> when you pick X or O the game starts anew.
+				</span>
+				<p>
+					<input type="radio" id="cbox0"  name="radioBtn">
+					<label for="cbox0" >Two player game</label>
+					<br>
+					<input type="radio" id="cbox1"  name="radioBtn">
+					<label for="cbox1">Play against the computer (Easy).</label>
+					<br>
+					<input type="radio" id="cbox2"  name="radioBtn">
+					<label for="cbox2">Play against the computer (Medium).</label>
+					<br>
+					<input type="radio" id="cbox3"  name="radioBtn">
+					<label for="cbox3">Play against the computer (Hard).</label>
+				</p>
+			</div>
+			<div class="boardWrap col">
+				<table>
+				
+					<!-- First Row -->
+					<tr>
+						<td id="cell00" >00</td>
+						<td id="cell01" >01</td>
+						<td id="cell02" >02</td>
+					</tr>
+					<!-- Second Row -->
+					<tr>
+						<td id="cell10" >10</td>
+						<td id="cell11" >11</td>
+						<td id="cell12" >12</td>
+					</tr>
+					<!-- Third Row -->
+					<tr>
+						<td id="cell20" >20</td>
+						<td id="cell21" >21</td>
+						<td id="cell22" >22</td>
+					</tr>
+				</table>
+			</div>
+			<div class="output col text-center"></div>
+		</div>
+	</div>
+	<button class="test" > Test</button>
+			
+	<script src="jquery.js"></script>
+	<script src="script.js" ></script>
+</body>
+</html>

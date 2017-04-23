@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Pomodoro Clock</title>
+</head>
+<body>
+<span class="smallscreen" >Not Designed for small screens</span>
+<span class="responsive" >
+	<div class="workKnobWrap">
+		<h2>How long do you want to work?!</h2>
+		<input type="text" value="25" class="knobWork">
+	</div>
+	<div class="breakKnobWrap">
+		<h2>And how about a break?</h2>
+		<input  type="text" value="5" class="knobBreak">
+	</div>
+	
+	<div class="contwrap" >
+		<h2>When this run out Enjoy a pause</h2>
+		<p class="countDownWorkWrap"></p>
+	</div>
+	<div class="contwrap2" >
+		<h2>Enjoyyyyy</h2>
+		<p class="countDownBreakWrap"></p>
+	</div>
+
+	<div class="btnWrap">
+		<button class="btn" >Start</button>
+	</div>
+
+	<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+	<script src="script.js" ></script>
+
+	</span>
+</body>
+</html>

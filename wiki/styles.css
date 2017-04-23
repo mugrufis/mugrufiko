@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #DEDEF8;
+}
+
+.interact{
+	margin-top: 20%;
+}
+
+input{
+	font-size: 2em;
+}
+
+button, img{
+	border: none;
+	padding: 1px;
+	border-radius: 100px;
+	width: 50px;
+}
+
+button:focus {
+	outline:0;
+	filter: invert(15%);
+}
+
+.resetBtn {
+	background-color:#DEDEF8; 
+	width: 70px;
+	border: 1px solid black;
+	display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover{
+	text-decoration: none;
+}
+

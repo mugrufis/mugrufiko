@@ -1,0 +1,70 @@
+.workKnobWrap{
+	width: 25vw;
+	min-height: 35vh;
+	float: left;
+	margin-left: 30vw;
+}
+
+.breakKnobWrap {
+	width: 25vw;
+	min-height: 35vh;
+	margin-right: 20vw;
+	float: right;
+}
+
+
+
+.btnWrap{
+	position: absolute;
+	left: 43vw;
+	top: 65vh;
+}
+
+
+
+.btn {
+	width: 250px;
+	border-radius: 45px;
+}
+
+.contwrap, .contwrap2{
+	width: 40vw;
+	height: 35vh;
+	position: absolute;
+	margin-left: 30vw;
+	margin-top: 10vh;
+}
+
+body{
+	margin:0;
+}
+
+h2{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+	font-size: 150px;
+	text-shadow: 5px 5px 10px #123456
+}
+
+.workKnobWrap h2, .breakKnobWrap h2{
+	margin-right: 13vw;
+	width: 20vw;
+
+}
+
+.smallscreen{
+	display: none;
+	font-size: 50px;
+}
+
+@media (max-width: 800px){
+	.responsive{
+		display: none;
+	}
+	.smallscreen{
+		display: block;
+	}
+}
